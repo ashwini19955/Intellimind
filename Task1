@@ -1,0 +1,16 @@
+filename='1.txt'
+f= open(filename, 'rt')
+text = f.read()
+words = text.split()
+print(words)
+import string
+tbl = str.maketras('', '', string.punctuation)
+print(tbl)
+import re
+words= re.split(r'\W+', text)
+words = text.split()
+words = [w.lower() for w in words]
+print(wd)
+doc=nlp(text)
+for en in doc.ents:
+    print(en.text,en.start_char,en.end_char,en.label_)
